@@ -1,1 +1,0 @@
-import{df as i}from"./_virtual_wxt-plugins-B68Wf6VS.js";let e;const t=new Promise(a=>{e=a});function r(a){e(a)}const[n,g]=i("gen-ai-database",()=>({getPromptStats:async()=>(await t).chatsRepo.getPromptStats(),getDailyPromptData:async(a,s)=>(await t).getDailyPromptData(a,s)}));export{g,n as r,r as s};

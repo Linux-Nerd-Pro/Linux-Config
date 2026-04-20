@@ -1,6 +1,0 @@
-2026/04/19-21:46:22.860 4 Reusing MANIFEST /home/alex023/.config/thorium/Default/Local Storage/leveldb/MANIFEST-000001
-2026/04/19-21:46:22.865 4 Recovering log #9
-2026/04/19-21:46:22.866 4 Reusing old log /home/alex023/.config/thorium/Default/Local Storage/leveldb/000009.log 
-2026/04/19-21:47:13.276 5 Level-0 table #13: started
-2026/04/19-21:47:13.277 5 Level-0 table #13: 16533 bytes OK
-2026/04/19-21:47:13.279 5 Delete type=0 #9
