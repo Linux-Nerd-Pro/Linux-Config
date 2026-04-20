@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Options
+options=" Power Off\n Reboot\n Suspend\n Logout"
+
+# Show menu and get choice
+chosen="$(echo -e "$options" | rofi -dmenu -i -p "Power Menu:")"
+
+# Execute command based on choice
+case "$chosen" in
+    *Power*) systemctl poweroff ;;
+    *Reboot*) systemctl reboot ;;
+    *Suspend*) systemctl suspend ;;
+    *Logout*) i3-msg exit ;;
+esac

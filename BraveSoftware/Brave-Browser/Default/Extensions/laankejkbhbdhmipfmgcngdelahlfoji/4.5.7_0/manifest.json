@@ -1,0 +1,69 @@
+{
+   "action": {
+      "default_popup": "popup.html",
+      "default_title": "StayFocusd"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content-scripts/ad-finder.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "content-scripts/ai-link-modifier.js", "content-scripts/gen-ai-collector.js" ],
+      "matches": [ "*://*/*" ]
+   }, {
+      "css": [ "content-scripts/blocked-statistics.css" ],
+      "js": [ "content-scripts/blocked-statistics.js" ],
+      "matches": [ "https://www.stayfocusd.com/blocked" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "js": [ "content-scripts/chatbot-finder.js" ],
+      "matches": [ "*://*/*" ]
+   }, {
+      "css": [ "content-scripts/in-app-blocking.css" ],
+      "js": [ "content-scripts/in-app-blocking.js" ],
+      "matches": [ "*://*.instagram.com/*", "*://*.tiktok.com/*", "*://*.youtube.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "content-scripts/overlay.js", "content-scripts/usage-monitoring.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "content-scripts/smart-bomb.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en_US",
+   "description": "__MSG_extDescription__",
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "24": "icon-24.png",
+      "32": "icon-32.png",
+      "48": "icon-48.png",
+      "96": "icon-96.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIZGExPKdmpnsG6ACNioLVAFgQnEl11tYcSeD3qLnKQ51DcR8B5uJJp1uRl+BhBL/NrHtpxBQ35xKfseM2HIFeIXD9gP+o2XlcL4kHkdt2Meo9e3CdLvRJL47fhnSgD1OrU5F+NO9Rpi3h/Cka1t9oHpt3kGWveWuMHskdLUW11QIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage", "tabs", "alarms", "webNavigation", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.5.7",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*/*" ],
+      "resources": [ "assets/*", "*.png", "*.css" ]
+   }, {
+      "matches": [ "*://*/*" ],
+      "resources": [ "content-scripts/overlay.css" ],
+      "use_dynamic_url": true
+   } ]
+}

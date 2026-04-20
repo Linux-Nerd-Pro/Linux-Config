@@ -1,0 +1,1 @@
+import{aS as r,a$ as t,D as u,b0 as s,C as a}from"./_virtual_wxt-plugins-B68Wf6VS.js";function n(){const e=r();return t({queryKey:[s.GetNuclearTimer],queryFn:()=>e.timers.getTimerById(a.Nuclear),refetchInterval:u.SECOND.ms,refetchOnMount:!0,refetchOnReconnect:!0,refetchOnWindowFocus:!0})}export{n as u};

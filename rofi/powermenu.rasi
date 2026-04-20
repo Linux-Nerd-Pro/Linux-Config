@@ -1,0 +1,57 @@
+/**
+ * Clean Dark Mode - Animation Compatible
+ **/
+
+* {
+    /* Color Palette */
+    bg:      #282A2E;
+    bg-alt:  #373B41;
+    fg:      #C5C8C6;
+    accent:  #F0C674;
+
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+window {
+    width:            300px;
+    background-color: @bg;
+    border:           2px;
+    border-color:     @accent;
+    border-radius:    12px;
+    location:         center;
+    anchor:           center;
+}
+
+mainbox {
+    padding:          12px;
+    children:         [ listview ];
+}
+
+listview {
+    columns:          1;
+    lines:            4;
+    spacing:          8px;
+    scrollbar:        false;
+}
+
+element {
+    padding:          10px;
+    border-radius:    8px;
+    /* This makes the background highlight feel smoother */
+    background-color: @bg; 
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color:       @accent;
+    /* Visual "pop" animation effect */
+    border:           0px 0px 0px 6px;
+    border-color:     @accent;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    vertical-align:   0.5;
+}

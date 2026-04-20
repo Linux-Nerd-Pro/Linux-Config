@@ -1,0 +1,109 @@
+1. ⌨️ The Essentials:
+
+Shortcut,Action
+Space,Your Leader Key (The prefix for most custom commands).
+:w,Save the current file.
+:q,Quit Neovim.
+Ctrl + w then q,Close the current split window (useful for closing the terminal).
+u: Undo.
+Ctrl + r: Redo.
+End: Shift + $.
+Start: Shift + 0.
+First Text: Shift + ^.
+gg: Jump to the top of the file.
+G: Jump to the bottom of the file. (Shift + g or Cap G)
+
+
+2. 📂 Navigation & File Management
+Shortcut,Action
+Ctrl + n,Toggle Sidebar: Opens/closes the file explorer (NvimTree).
+Space + ff,Find Files: Search for a file by name.
+Space + fg,Find Grep: Search for specific words inside all files.
+Space + fb,Find Buffers: List and switch between all open files.
+Tab,Next File: Move to the next open buffer (if you added the Tab mapping).
+Shift + Tab,Prev File: Move to the previous open buffer
+
+3. 🚀 Running Your Code (The "Output" Features)
+
+These shortcuts are your "Play" buttons. They handle the boring stuff (saving and typing terminal commands) for you.
+
+    F5 (Python): Automatically types :w (Save), splits your screen, and runs python3 hello.py.
+
+    F6 (JavaScript): Automatically types :w (Save), splits your screen, and runs node hello.js.
+
+The Workflow:
+
+    Write code.
+
+    Press F5 or F6.
+
+    See results instantly.
+
+    Press Ctrl + w then q to close the result window.
+
+4. 🛠️ How to Add Your Own Shortcuts
+
+Think of the line vim.keymap.set("n", "...", "...", ...) like a recipe:
+
+    vim.keymap.set("n", "Shortcut", "Action", { Options })
+
+    "n" (Normal Mode): This shortcut only works when you are not typing code (after you hit Esc). This prevents you from accidentally triggering commands while writing.
+
+    "Shortcut": The keys you want to press (e.g., "<leader>w").
+
+    "Action": Exactly what you would type into the Neovim command bar.
+
+    "<CR>": This is the most important part! It stands for "Carriage Return" (the Enter key). Without this, Neovim will type the command but wait for you to hit Enter manually.
+
+
+🏷️ The "Rename" Cheat Sheet
+1. Renaming Code (The Smart Way)
+
+Use this when you want to change a variable or function name everywhere it appears in your file without breaking anything.
+Shortcut	Action	When to use it
+Space + r + n	LSP Rename	When your cursor is on a variable like x and you want to change it to total_sum.
+Space + c + a	Code Actions	When there is an error; sometimes the LSP suggests a "quick rename" or fix.
+2. Renaming Files (The Sidebar Way)
+
+Use this to change the actual name of the file on your hard drive (e.g., from hello.py to main.py).
+Shortcut	Action	Steps
+Ctrl + n	Open Sidebar	Opens the NvimTree file explorer on the left.
+r	Rename File	Hover over the file in the sidebar and press r to type a new name.
+a	Add File	Hover over a folder in the sidebar and press a to create a new file.
+d	Delete File	Hover over a file in the sidebar and press d to remove it.
+
+In Neovim, "Copy" is called Yank (represented by y) and "Paste" is called Put (represented by p).
+
+Here is how you handle lines and entire files while in Normal Mode:
+✂️ Copying and Cutting Lines
+Action	Shortcut	Why this way?
+Copy (Yank) 1 line	yy	Copies the entire line your cursor is on.
+Cut (Delete) 1 line	dd	Deletes the line and saves it to your clipboard (to be pasted later).
+Paste	p	Pastes the copied/cut text after the cursor.
+Paste (Above)	P (Shift+p)	Pastes the text before the cursor.
+
+    Pro Tip: To copy 3 lines, just type 3yy.
+
+📄 Copying and Cutting the Entire File
+
+To do this, we combine "Movement" commands with "Action" commands.
+
+To Copy Everything:
+
+    Type ggyG
+
+        gg (go to start)
+
+        y (yank/copy)
+
+        G (until the end)
+
+To Cut (Delete) Everything:
+
+    Type ggdG
+
+        gg (go to start)
+
+        d (delete)
+
+        G (until the end)

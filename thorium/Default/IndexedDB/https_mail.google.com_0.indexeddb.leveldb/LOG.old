@@ -1,0 +1,6 @@
+2026/04/19-21:46:28.447 8ad Reusing MANIFEST /home/alex023/.config/thorium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/19-21:46:28.447 8ad Recovering log #3
+2026/04/19-21:46:28.451 8ad Reusing old log /home/alex023/.config/thorium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000003.log 
+2026/04/19-21:46:33.424 8ad Level-0 table #5: started
+2026/04/19-21:46:33.442 8ad Level-0 table #5: 3194836 bytes OK
+2026/04/19-21:46:33.445 8ad Delete type=0 #3

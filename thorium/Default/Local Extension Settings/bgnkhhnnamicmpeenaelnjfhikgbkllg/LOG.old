@@ -1,0 +1,21 @@
+2026/04/19-21:46:23.754 8ad Reusing MANIFEST /home/alex023/.config/thorium/Default/Local Extension Settings/bgnkhhnnamicmpeenaelnjfhikgbkllg/MANIFEST-000001
+2026/04/19-21:46:23.755 8ad Recovering log #13
+2026/04/19-21:46:23.759 8ad Reusing old log /home/alex023/.config/thorium/Default/Local Extension Settings/bgnkhhnnamicmpeenaelnjfhikgbkllg/000013.log 
+2026/04/19-21:46:27.432 8ae Level-0 table #17: started
+2026/04/19-21:46:27.448 8ae Level-0 table #17: 979927 bytes OK
+2026/04/19-21:46:27.452 8ae Delete type=0 #13
+2026/04/19-21:46:27.453 8ae Compacting 4@0 + 1@1 files
+2026/04/19-21:46:27.473 8ae Generated table #18@0: 5 keys, 331695 bytes
+2026/04/19-21:46:27.474 8ae Compacted 4@0 + 1@1 files => 331695 bytes
+2026/04/19-21:46:27.475 8ae compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/19-21:46:27.475 8ae Delete type=2 #8
+2026/04/19-21:46:27.475 8ae Delete type=2 #10
+2026/04/19-21:46:27.475 8ae Delete type=2 #12
+2026/04/19-21:46:27.475 8ae Delete type=2 #14
+2026/04/19-21:46:27.475 8ae Delete type=2 #17
+2026/04/19-21:46:29.080 8ae Level-0 table #20: started
+2026/04/19-21:46:29.096 8ae Level-0 table #20: 1655570 bytes OK
+2026/04/19-21:46:29.098 8ae Delete type=0 #16
+2026/04/19-21:46:32.750 8ad Level-0 table #22: started
+2026/04/19-21:46:32.768 8ad Level-0 table #22: 1655074 bytes OK
+2026/04/19-21:46:32.770 8ad Delete type=0 #19

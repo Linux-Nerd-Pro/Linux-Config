@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{au as o,aL as n,aM as r}from"./_virtual_wxt-plugins-B68Wf6VS.js";const s={},_={class:"text-3xl my-4 font-medium text-primary font-['Ubuntu']"};function a(t,c){return n(),o("p",_,[r(t.$slots,"default")])}const l=e(s,[["render",a]]);export{l as _};

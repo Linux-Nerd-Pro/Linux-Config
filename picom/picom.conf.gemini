@@ -1,0 +1,82 @@
+#################################
+#             Corners           #
+#################################
+# Requires a picom fork like 'pijulius' or 'jonaburg' for rounded corners.
+# Standard picom may ignore this or require specific builds.
+corner-radius = 10;
+
+#################################
+#             Shadows           #
+#################################
+shadow = true;
+shadow-radius = 12;
+shadow-opacity = .75;
+shadow-offset-x = -7;
+shadow-offset-y = -7;
+shadow-exclude = [
+  "name = 'Notification'",
+  "class_g = 'Polybar'",
+  "_GTK_FRAME_EXTENTS@:c"
+];
+
+#################################
+#           Fading              #
+#################################
+fading = true;
+fade-in-step = 0.03;
+fade-out-step = 0.03;
+fade-delta = 5;
+
+#################################
+#   Transparency / Opacity      #
+#################################
+inactive-opacity = 0.9;
+frame-opacity = 0.7;
+inactive-opacity-override = false;
+active-opacity = 1.0;
+
+# Focus exclude makes sure things like games or videos don't go transparent
+focus-exclude = [ "class_g = 'Cairo-clock'" ];
+
+opacity-rule = [
+  "100:class_g = 'Firefox'",
+  "100:class_g = 'mpv'",
+  "90:class_g = 'Alacritty'",
+  "90:class_g = 'URxvt'"
+];
+
+#################################
+#     Background Blurring       #
+#################################
+# This makes transparent windows look "frosted"
+blur-method = "dual_kawase";
+blur-strength = 5;
+blur-background = true;
+blur-background-exclude = [
+  "window_type = 'dock'",
+  "window_type = 'desktop'",
+  "_GTK_FRAME_EXTENTS@:c"
+];
+
+#################################
+#       General Settings        #
+#################################
+# Use 'glx' for better performance on most modern hardware
+backend = "glx";
+vsync = true;
+mark-wmwin-focused = true;
+mark-ovlp-focused = true;
+detect-rounded-corners = true;
+detect-client-opacity = true;
+detect-transient = true;
+use-damage = true;
+log-level = "warn";
+
+wintypes:
+{
+  tooltip = { fade = true; shadow = true; opacity = 0.75; focus = true; full-shadow = false; };
+  dock = { shadow = false; clip-shadow-above = true; }
+  dnd = { shadow = false; }
+  popup_menu = { opacity = 0.8; }
+  dropdown_menu = { opacity = 0.8; }
+};

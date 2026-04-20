@@ -1,0 +1,21 @@
+2026/04/20-09:23:38.245 4 Reusing MANIFEST /home/alex023/.config/thorium/Default/Session Storage/MANIFEST-000001
+2026/04/20-09:23:38.246 4 Recovering log #29
+2026/04/20-09:23:38.246 4 Reusing old log /home/alex023/.config/thorium/Default/Session Storage/000029.log 
+2026/04/20-09:23:46.936 5 Level-0 table #33: started
+2026/04/20-09:23:46.938 5 Level-0 table #33: 52784 bytes OK
+2026/04/20-09:23:46.940 5 Delete type=0 #29
+2026/04/20-09:23:59.915 5 Level-0 table #35: started
+2026/04/20-09:23:59.936 5 Level-0 table #35: 50457 bytes OK
+2026/04/20-09:23:59.937 5 Delete type=0 #32
+2026/04/20-09:23:59.937 5 Compacting 4@0 + 1@1 files
+2026/04/20-09:23:59.942 5 Generated table #36@0: 271 keys, 105758 bytes
+2026/04/20-09:23:59.942 5 Compacted 4@0 + 1@1 files => 105758 bytes
+2026/04/20-09:23:59.943 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/20-09:23:59.943 5 Delete type=2 #26
+2026/04/20-09:23:59.943 5 Delete type=2 #28
+2026/04/20-09:23:59.943 5 Delete type=2 #30
+2026/04/20-09:23:59.943 5 Delete type=2 #33
+2026/04/20-09:23:59.943 5 Delete type=2 #35
+2026/04/20-09:27:12.151 5 Level-0 table #38: started
+2026/04/20-09:27:12.152 5 Level-0 table #38: 50122 bytes OK
+2026/04/20-09:27:12.154 5 Delete type=0 #34

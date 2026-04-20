@@ -1,0 +1,6 @@
+2026/04/19-18:30:17.416 5 Reusing MANIFEST /home/alex023/.config/net.imput.helium/Default/Local Storage/leveldb/MANIFEST-000001
+2026/04/19-18:30:17.419 5 Recovering log #3
+2026/04/19-18:30:17.420 5 Reusing old log /home/alex023/.config/net.imput.helium/Default/Local Storage/leveldb/000003.log 
+2026/04/19-18:31:17.421 7 Level-0 table #5: started
+2026/04/19-18:31:17.425 7 Level-0 table #5: 208530 bytes OK
+2026/04/19-18:31:17.426 7 Delete type=0 #3

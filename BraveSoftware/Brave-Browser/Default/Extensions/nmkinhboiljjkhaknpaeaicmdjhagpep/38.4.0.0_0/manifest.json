@@ -1,0 +1,34 @@
+{
+   "action": {
+      "default_icon": "fbp-16x16.png",
+      "default_popup": "fbp-info.html",
+      "default_title": "Fluff Busting Purity"
+   },
+   "author": "Steve Fernandez",
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "exclude_globs": [ "https://*.facebook.com/ajax/*", "https://www.facebook.com/ai.php*", "https://www.facebook.com/xti.php*", "https://developers.facebook.com/*", "https://www.facebook.com/business/*", "https://www.facebook.com/ads/manager*", "https://www.facebook.com/adsmanager*", "https://business.facebook.com/adsmanager*", "https://secure.facebook.com/ads/manager*", "https://secure.facebook.com/adsmanager*", "https://adsmanager.facebook.com/*" ],
+      "include_globs": [ "https://*.facebook.com/*" ],
+      "js": [ "script.js" ],
+      "matches": [ "https://*.facebook.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Fluff Busting Purity cleans up & customises Facebook, letting you filter out the junk you dont want to see",
+   "homepage_url": "https://www.fbpurity.com",
+   "host_permissions": [ "https://*.facebook.com/*", "https://www.fbpurity.com/*" ],
+   "icons": {
+      "128": "fbp-128x128.png",
+      "16": "fbp-16x16.png",
+      "48": "fbp-48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo454djQEGeIL8sCvF1xMOiwOyNvdwT+8O3iqSVraOXw90gAW1GDVwHm8hm6YD/4K9boUDjvYcv47WmilNbg+IRimJ9NlwnXHMZmXKr9QKPbWezzJWjz3MMerqjzL0nx60SC2Xo8G9QS7HAod4fBgs7iKyckYlD68NY8D8bsjTW3nH+hDXtKqQrgBn+KSfbZveZDOpluaX+tjWBwG7dwX0rch1ENL3sRQzsmgVkzuHcgUPnn6rYP8We9tiWvOavYDtWZyYh52qb1++0d84ABVp1eoQOX8/n9ETcSDrEYfqiszciGMHfBp7PgHXGsg0efmBQCIoIbLjmDkR471tb7xoQIDAQAB",
+   "manifest_version": 3,
+   "name": "Fluff Busting Purity",
+   "permissions": [ "storage" ],
+   "short_name": "Fluff Busting Purity",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "38.4.0.0"
+}

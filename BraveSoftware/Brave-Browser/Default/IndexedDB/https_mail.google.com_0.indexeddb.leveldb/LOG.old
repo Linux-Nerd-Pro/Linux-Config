@@ -1,0 +1,6 @@
+2026/04/19-22:06:15.816 f3a Reusing MANIFEST /home/alex023/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/19-22:06:15.816 f3a Recovering log #4
+2026/04/19-22:06:15.818 f3a Reusing old log /home/alex023/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000004.log 
+2026/04/19-22:06:32.917 f3a Level-0 table #8: started
+2026/04/19-22:06:32.942 f3a Level-0 table #8: 3223759 bytes OK
+2026/04/19-22:06:32.943 f3a Delete type=0 #4

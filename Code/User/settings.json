@@ -1,0 +1,4 @@
+{
+    "window.titleBarStyle": "native",
+    "security.workspace.trust.untrustedFiles": "open"
+}

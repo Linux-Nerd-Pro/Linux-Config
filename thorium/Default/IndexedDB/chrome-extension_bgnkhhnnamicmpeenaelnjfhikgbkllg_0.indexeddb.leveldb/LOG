@@ -1,0 +1,17 @@
+2026/04/20-09:23:38.913 1106 Reusing MANIFEST /home/alex023/.config/thorium/Default/IndexedDB/chrome-extension_bgnkhhnnamicmpeenaelnjfhikgbkllg_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/20-09:23:38.914 1106 Recovering log #23
+2026/04/20-09:23:38.917 1106 Reusing old log /home/alex023/.config/thorium/Default/IndexedDB/chrome-extension_bgnkhhnnamicmpeenaelnjfhikgbkllg_0.indexeddb.leveldb/000023.log 
+2026/04/20-09:23:38.917 1106 Delete type=2 #21
+2026/04/20-09:23:38.917 1106 Delete type=2 #22
+2026/04/20-09:23:38.917 1106 Delete type=2 #24
+2026/04/20-09:23:38.929 10fb Level-0 table #29: started
+2026/04/20-09:23:38.934 10fb Level-0 table #29: 1141585 bytes OK
+2026/04/20-09:23:38.936 10fb Delete type=0 #23
+2026/04/20-09:23:38.936 10fb Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at '\x00\x07\x00\x00\x05' @ 14552 : 1
+2026/04/20-09:23:38.936 10fb Compacting 1@0 + 2@1 files
+2026/04/20-09:23:38.950 10fb Generated table #30@0: 3683 keys, 2117007 bytes
+2026/04/20-09:23:38.960 10fb Generated table #31@0: 626 keys, 1377019 bytes
+2026/04/20-09:23:38.960 10fb Compacted 1@0 + 2@1 files => 3494026 bytes
+2026/04/20-09:23:38.962 10fb compacted to: files[ 0 2 1 0 0 0 0 ]
+2026/04/20-09:23:38.962 10fb Delete type=2 #29
+2026/04/20-09:23:38.962 10fb Manual compaction at level-0 from '\x00\x07\x00\x00\x05' @ 14552 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
